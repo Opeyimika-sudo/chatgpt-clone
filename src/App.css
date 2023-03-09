@@ -52,10 +52,6 @@ button:hover {
   cursor: pointer;
 }
 
-.main_section{
-  flex: 1;
-  background-color: rgba(52,53,65, 1);
-}
 
 a {
   text-decoration: none;
@@ -88,4 +84,130 @@ a {
 .footer_item:hover {
   background-color: hsla(240,9%,59%,.1);
   border-radius: 5px;
+}
+
+.chat_box{
+  flex: 1;
+  background-color: rgba(52,53,65, 1);
+}
+
+main, footer{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.main_header {
+  font-size: 40px;
+  text-align: center;
+  color: rgba(236,236,241,1);
+}
+
+.main_hero {
+  display: flex;
+  gap: 10px;
+}
+
+.main_hero--column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* margin: 0 auto; */
+  gap: 10px;
+}
+
+.main_hero--column-title {
+  display: flex;
+  flex-direction: column;
+  color: rgba(236,236,241,1);
+}
+
+.main_hero--column-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* gap: 20px; */
+}
+
+.button_hero_text {
+  padding: 13px;
+  margin: 16px 0px;
+}
+
+.hero_text {
+  padding: 10px;
+  margin: 16px 0px;
+}
+
+/* .button_hero_text + .button_hero_text {
+  margin: 15px auto;
+} */
+
+.button_hero_text, .hero_text{
+  color: rgba(236,236,241,1);
+  background-color: rgb(62,63,75);
+  border: 1px solid rgb(62,63,75);
+  border-radius: 0.375rem;
+  /* padding: 5px; */
+}
+
+.hero_text {
+  padding: 10px;
+}
+
+.button_hero_text:hover {
+  background-color: rgba(32,33,35,1);
+  border: 1px solid rgba(32,33,35,1);
+}
+
+.chat_box svg {
+  margin: 0 auto;
+} 
+
+form {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  /* height: 58px; */
+}
+
+input {
+  padding: 12px 0 12px 16px;
+  border: 0;
+  background-color: rgb(64,65,79);
+  width: inherit;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+input:focus-visible {
+  border: none;
+  outline: none;
+  background-color: rgb(64,65,79);
+}
+
+form svg{
+  position: absolute;
+  right: 0;
+  top: 30%; 
+  color: rgba(142,142,160,1);
+}
+
+form svg:hover {
+  cursor: pointer;
+}
+
+footer {
+  color: hsla(0,0%,100%,.5);
+  /* margin: 0; */
+  padding: 0;
+}
+
+footer a {
+  color: hsla(0,0%,100%,.5);
+  text-decoration: underline;
 }
